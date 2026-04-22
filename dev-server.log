@@ -1,0 +1,23 @@
+
+> personal-portfolio@3.0.0 dev C:\Users\20194023\Documents\GitHub\website
+> astro dev "--" "--host" "127.0.0.1"
+
+12:34:23 [types] Generated 5ms
+
+ astro  v4.16.19 ready in 1407 ms
+
+┃ Local    http://localhost:4321/
+┃ Network  use --host to expose
+
+
+ update  ▶ New version of Astro available: 6.1.8
+  Run pnpm dlx @astrojs/upgrade to update
+
+12:34:23 watching for file changes...
+12:35:20 [200] / 27ms
+12:51:29 [watch] src/components/SideBarFooter.astro
+12:53:17 [watch] src/components/SideBarFooter.astro
+12:55:09 [watch] src/components/SideBarFooter.astro
+12:57:12 [watch] src/pages/contact.astro
+12:57:39 [watch] src/pages/contact.astro
+12:59:03 [watch] src/config.ts
