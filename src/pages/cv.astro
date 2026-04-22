@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import TimeLineElement from "../components/cv/TimeLine.astro";
+import { withBase } from "../lib/paths";
 ---
 
 <BaseLayout title="CV" sideBarActiveItemID="cv">
@@ -12,7 +13,7 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
       MSc Computer Science and Engineering student focused on system validation, data management, and backend software
       development.
     </p>
-    <a class="btn btn-outline" href="/cv.pdf" download>Download CV PDF</a>
+    <a class="btn btn-outline" href={withBase("/cv.pdf")} download>Download CV PDF</a>
   </section>
 
   <section class="mb-10">

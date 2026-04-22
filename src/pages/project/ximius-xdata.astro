@@ -1,12 +1,13 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { withBase } from "../../lib/paths";
 ---
 
 <BaseLayout title="Ximius XData" sideBarActiveItemID="projects">
   <article class="grid gap-10">
     <header class="grid gap-4">
-      <a class="link w-fit" href="/projects">Back to projects</a>
-      <img src="/XimiusLogo.webp" alt="Ximius logo" class="max-h-28 w-fit object-contain" />
+      <a class="link w-fit" href={withBase("/projects")}>Back to projects</a>
+      <img src={withBase("/XimiusLogo.webp")} alt="Ximius logo" class="max-h-28 w-fit object-contain" />
       <div>
         <h1 class="text-4xl font-bold">Ximius XData - Back-End Hospital Capacity Management</h1>
         <p class="mt-3 text-lg text-base-content/75">
