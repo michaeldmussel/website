@@ -10,8 +10,8 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
       <div>
         <h1 class="text-4xl font-bold">Ximius XData - Back-End Hospital Capacity Management</h1>
         <p class="mt-3 text-lg text-base-content/75">
-          Replace or refine this summary with the exact scope of your work, the systems involved, and the outcome you can
-          publicly describe.
+          Back-end work on a distributed hospital administration and capacity management platform, designed to aggregate,
+          validate, and prepare real-time HL7-driven data for client-facing analysis and visualization.
         </p>
       </div>
     </header>
@@ -19,33 +19,43 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     <section>
       <h2 class="text-2xl font-bold mb-3">Project Overview</h2>
       <p>
-        This project focused on large data modeling and management for hospital capacity workflows. Fill this section with
-        the real business context, data constraints, client requirements, and what XData helped users analyze or decide.
+        XData is a fully back-end software system for healthcare clients that need reliable, current insight into
+        hospital administration and capacity data. The platform sits behind client-facing dashboards and analysis tools,
+        where it collects operational messages, validates incoming data, models domain-specific hospital workflows, and
+        turns fragmented real-time inputs into structured information that hospitals can trust.
+      </p>
+      <p class="mt-3">
+        The technical challenge was not just moving data from one place to another. The system had to respect HL7-style
+        messaging, preserve correctness across distributed components, and support custom analysis paths without leaking
+        complexity into the visualization layer built on top of it.
       </p>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold mb-3">My Role</h2>
       <p>
-        Describe your back-end responsibilities here: data model design, APIs, validation rules, integrations,
-        performance work, deployment support, or maintenance tasks. Keep the claims precise and adjust anything that feels
-        too broad.
+        I worked as part of the back-end team designing data models and implementing business logic for distributed
+        healthcare messaging. My work involved reasoning about hospital capacity concepts, message-driven state changes,
+        validation rules, and the boundaries between raw operational data and the higher-level views clients needed.
       </p>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold mb-3">Tools and Technologies</h2>
       <ul class="list-disc mx-6 grid gap-2">
-        <li>Add primary language or framework</li>
-        <li>Add database, data tools, or modeling approach</li>
-        <li>Add infrastructure, testing, validation, or monitoring tools</li>
+        <li>Python (SQLModel database, alembic migrations), SQL (Procedures, indexed queries and views).</li>
+        <li>SQL Server Management Studio, Docker, Postman, and privacy-aware engineering practices.</li>
+        <li>HL7-oriented distributed messaging, Unit testing, end-to-end testing and agile workflow.</li>
       </ul>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold mb-3">Links and Media</h2>
       <p>
-        Add the company website, permitted repository links, screenshots, diagrams, or product images here.
+        <div>
+        <div class="font-bold">GitHub</div>
+        <a href="https://ximius.eu/diensten/data-intelligence/" target="_blank">Ximius</a>
+      </div>
       </p>
     </section>
   </article>

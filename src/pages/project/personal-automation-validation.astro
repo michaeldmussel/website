@@ -2,15 +2,15 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 ---
 
-<BaseLayout title="Personal Automation and Validation Project" sideBarActiveItemID="projects">
+<BaseLayout title="AreaClicker - Deterministic RTS helper for timing experiments" sideBarActiveItemID="projects">
   <article class="grid gap-10">
     <header class="grid gap-4">
       <a class="link w-fit" href="/projects">Back to projects</a>
       <img src="/post_img.webp" alt="Project preview" class="max-h-64 w-full rounded-lg object-cover" />
       <div>
-        <h1 class="text-4xl font-bold">Personal automation and validation project</h1>
+        <h1 class="text-4xl font-bold">Personal helper tool for prototype testing</h1>
         <p class="mt-3 text-lg text-base-content/75">
-          Replace this with the real project name and a concise summary once you decide which second project to present.
+          AreaClicker was designed with multiple use cases in mind and serves as a general RTS experiment aid via random time interval UI mouse simulations.
         </p>
       </div>
     </header>
@@ -18,33 +18,32 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
     <section>
       <h2 class="text-2xl font-bold mb-3">Project Overview</h2>
       <p>
-        Explain the problem this project solves, who it was for, and why it was worth building. This is a good place to
-        describe niche personal automation, system modeling, or program validation work.
+        Niche program testing, ranging from persistent UIs or real time systems would benefit from automation's of user actions according to developer design. This concept exceeds the scope of regular unit testing or end-to-end testing, but falls short of demos due to the focus on long repetetive actions. This program allows for design of test case and automation.
       </p>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold mb-3">Implementation</h2>
       <p>
-        Add the architecture, core logic, important constraints, and any interesting technical decisions. Keep this
-        factual and adjust the depth depending on whether the project is meant to impress engineers, recruiters, or
-        clients.
+        Rust's strong enum types were used for strict states of actions and objects. Areas are user entered via a selection from display, as well as further customization of sequenced clicks and wait times. To ensure robustness through lengthy run states, time intervals are periodically divided for task waiting allowing interoperability and fluid processor sharing.
       </p>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold mb-3">Tools and Technologies</h2>
       <ul class="list-disc mx-6 grid gap-2">
-        <li>Add primary language or framework</li>
-        <li>Add libraries, data formats, or modeling tools</li>
-        <li>Add testing, validation, or automation tools</li>
+        <li>Rust desktop stack with eframe/egui for UI, Enigo for mouse control, winit/display-info for window and monitor handling, serde/TOML for saved presets, and rand for human-like movement timing</li>
+        <li>Cargo-based builds and tests, Rust unit tests, compiled run-plan validation, recursive sequence detection, bounds validation, delay normalization, and optional rdev hotkey hooks</li>
       </ul>
     </section>
 
     <section>
       <h2 class="text-2xl font-bold mb-3">Links and Media</h2>
       <p>
-        Add the GitHub repository, live demo, screenshots, diagrams, or example outputs here.
+        <div>
+        <div class="font-bold">GitHub</div>
+        <a href="https://github.com/michaeldmussel/AreaPicker" target="_blank">AreaPicker</a>
+      </div>
       </p>
     </section>
   </article>
